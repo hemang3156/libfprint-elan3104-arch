@@ -1,0 +1,26 @@
+pkgbase = libfprint-elan3104-git
+	pkgdesc = Fingerprint library with community patch for ELAN 3104 / 04f3:3104 sensors
+	pkgver = 1.94.5
+	pkgrel = 1
+	url = https://github.com/r4nd3l/elan-3104-fingerprint-linux
+	arch = x86_64
+	license = LGPL
+	makedepends = git
+	makedepends = meson
+	makedepends = ninja
+	makedepends = gobject-introspection
+	depends = libgusb
+	depends = nss
+	depends = pixman
+	depends = opencv
+	depends = glib2
+	depends = systemd
+	provides = libfprint
+	provides = libfprint-2.so=2-64
+	conflicts = libfprint
+	source = libfprint::git+https://github.com/goodix-fp-linux-dev/libfprint.git#commit=07306bbc9256942595e31fb0f407b364ffa24d07
+	source = elan-3104::git+https://github.com/r4nd3l/elan-3104-fingerprint-linux.git
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = libfprint-elan3104-git
