@@ -28,7 +28,7 @@ build() {
     --prefix=/usr \
     --libdir=/usr/lib \
     -Ddrivers=elanspi \
-    -Dudev_rules=disabled \
+    -Dudev_rules_dir=/usr/lib/udev/rules.d \
     -Ddoc=false
   ninja -C build
 }
